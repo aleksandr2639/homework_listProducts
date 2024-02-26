@@ -21,7 +21,6 @@ function Item ( { item } : ItemProps) {
     const level: string = item.quantity <= 10 ? 'level-low' : item.quantity < 20 ? 'level-medium' : 'level-high'
 
    return (
-      <>
         <div className="item">
             <div className="item-image">
                 <a href={item.url}>
@@ -34,7 +33,6 @@ function Item ( { item } : ItemProps) {
                 <p className={"item-quantity " + level}>{item.quantity} left</p>
             </div>
         </div>
-      </>
    )
 }
 
